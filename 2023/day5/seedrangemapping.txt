@@ -1,0 +1,17 @@
+look at the example input
+the second range is (55-68)
+where does that map into the next one
+its within the (50-98) range which maps to 52
+so (55-68) -> (57-70)
+now look at the next one
+its not inside any of them so (57-70) -> (57-70)
+now look at the next one
+part of it is inside (53-61) which maps to 49 and part of it is not
+split the part which is inside it (57-61) and the part which is not (62-70)
+which gives you map(57-61) -> (53-57) and the (62-70) which didnt fall inside the map
+continue to next one with both (53-57) and (62-70)
+etc
+
+
+
+So just do that for all the seed ranges, split when needed, and then choose the smallest one at the end?.
